@@ -1,0 +1,244 @@
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+*/
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url('../fonts/OpenSans-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url('../fonts/OpenSans-SemiBold.ttf'); 
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: OpenSans-Regular;    
+	background-color: #FFFFFF;
+}
+.nav-link{
+	font-family: OpenSans-Regular;
+	font-size: 12px;
+	color: #4A4A4A;
+	letter-spacing: 0;
+}
+.nav-link:hover{
+	color: #0079D4;
+	font-weight: 600;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+.navbar-zio{
+	background-color: #f1f1f1 !important;
+}
+.logo-zio{
+	height: 2.75rem;
+}
+.zio-landing{
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	background-color: #f1f1f1;
+}
+.zio-land{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100vh;
+}
+.zio-bg{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 75vh;
+	background-image: url(../../assets/images/bg.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.15, 1.15, 1.15);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.pulse:hover{
+	animation: none;
+	cursor: pointer;
+}
+.zio-footer{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 20vh;
+	padding-bottom: 15px;
+}
+
+.zio-footer h1{
+	font-size: 2.3rem;
+}
+
+.zio-welcome{
+	background-color: #f1f1f1;
+	height: 115vh;
+	text-align: center;
+}
+.zio-w{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 77%;
+}
+.zio-w a{
+	text-decoration: none;
+	color: inherit;
+}
+.zio-w a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+.brand-story{
+	background: #FFFFFF;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 345px;
+	padding: 3em ;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.brand-story h1{
+	font-family: OpenSans-SemiBold;
+	font-size: 18px;
+	padding: 1rem 0;
+	letter-spacing: 0;
+}
+.brand-story p{
+	font-family: OpenSans-Regular;
+	font-size: 14px;
+	/*color: #6E6E6E;*/
+	letter-spacing: 0;
+	text-align: center;
+}
+.brand-story:hover{
+	background: #00B4CD;
+	color: #FFFFFF ;
+}
+.lets-build{
+	background: #00B4CD;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+	height: 345px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.lets-build h1{
+	font-family: OpenSans-SemiBold;
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	padding-top: 2em;
+}
+.lets-build:hover{
+	/*background: #FFFFFF;*/
+}
+.zio-foot{
+	margin-bottom: 20px 0;
+}
+.zio-foot p{
+	font-family: OpenSans-Regular;
+	font-size: 10px;
+	color: #4A4A4A;
+	letter-spacing: 0;
+	text-align: center;
+	margin-bottom: 0;
+}
+.brand-story-img{
+	border-radius: 10px;
+	margin-bottom: 1em;
+	position: relative;
+	z-index: 0;
+}
+.brand-story-img img{
+	width: 100%;
+	border-radius: 10px;
+}
+.brand-story-img:hover .circle-overlay{
+	opacity: 1;
+}
+.circle-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #00D1B2;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: all 0.5s;
+    z-index: 1;
+    opacity: 0;
+}
+.project-info {
+	color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition-delay: 1s;
+}
+.project-info a{
+	color: #FFFFFF;
+}
+.zio-view-project{
+	width: 100%;
+    height: 88%;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
